@@ -1,0 +1,1398 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Archivo+Black&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@1,500&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Pacifico&family=Preahvihear&family=Spicy+Rice&display=swap');
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.bberanda{
+    /* background: #011714;
+    background-attachment:fixed; */
+    /* position:absolute; */
+    min-height: 100vh;
+    padding-top: 30px;
+    overflow-x: hidden;
+    font-family: "Kanit", sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #fcffe6;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+}
+.navi a{
+    text-decoration: none;
+    /* background: rgb(255, 255, 255); */
+    color: #756600;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 5px;
+    font-weight: 600;
+}
+.navi a:hover,
+.navi a.active{
+    background: #5F6F52;
+    color: azure;
+
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+    height: 100vh; 
+    width: 100%;
+    overflow: hidden;
+}
+#text {
+    position: absolute;
+    text-align: center;
+
+    padding-bottom: 400px;
+
+    font-size: 4em;
+    color: rgb(45, 73, 61);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+}
+.kata{
+    position: relative;
+    background: #011714;
+    padding: 100px;
+    height: 100vh;
+    
+}
+.kata h2{
+    font-size: 3em;
+    color: white;
+    /* margin-bottom: 10px; */
+    margin-top: 30px;
+    padding-top: 40px;
+}
+.kata p{
+    font-size: 1em;
+    color: white;
+    font-weight: 200;
+    text-align:justify;
+}
+
+
+.umkma{
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: #e6ffef;
+    background-size: cover;    
+}
+#attext{
+    text-align:center
+}
+
+.ptext{
+    text-align: center;
+}
+.ptext h1{
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.ptext h2{
+    font-size: 20px;
+    line-height: 1.2;
+}
+.ptext h5{
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.baris img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.pkonten{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 4rem;
+    align-items: center;
+    margin-top: 8rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.baris{
+    background: var(--bg-color);
+    padding: 0px 0px 100px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+}
+.baris:hover{
+    transform: translateY(-15px);
+    box-shadow: 3px 0;
+}
+
+body.bkkm{
+    background-image: url(bgkkm.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        font-family: "Kanit", sans-serif;
+}
+
+.berandak{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+ }
+ .bgkkm{    
+    background: white;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+
+}
+
+.kkm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vw 10vw 10vw;
+    height: 100vh;
+    
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 70px;
+    border: 1px solid grey;
+}
+.kkmt h1{
+    font-size: 70px;
+    margin: 0;
+    -webkit-text-fill-color: rgb(230, 220, 220);
+    -webkit-text-stroke-width: 3px;
+}
+.kkmt h3{
+    margin: 6px !important;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 5px  #000000;
+}
+.kkmf img{
+    width: 28vw;
+}
+.kegiatan{
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fkegiatan{
+    position: relative;
+    padding: 0 50px;
+    height: inherit;
+}
+
+
+.fkegiatan img{
+    width: 15vw;
+    position: absolute;
+    top: 220px;
+    /* display: flex; */
+}
+.tkegiatan{
+    width: 50%;
+}
+ol{
+    list-style: none;
+    color: aquamarine;
+}
+ol li{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 1px solid white;
+}
+li p{
+    font-size: 16px;
+    color: green;
+    padding-left: 60px;
+    line-height: 30px;
+    opacity: 0.6;
+}
+li span{
+    position: absolute;
+}
+
+
+
+ .berandap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+    padding: 100px 8% 120px;
+ }
+
+
+ .kontenp{
+    flex: 1 1 400px;
+    margin-bottom: 200px;
+}
+ .berandap .img{
+    flex: 1 1 150px;
+ }
+ .berandap .img img{
+    width: 100%;
+    justify-content: 100vh;
+    width: 600px;
+    height: 650px;
+    margin: 0px;
+    object-position: right;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 120px;
+ }
+
+ .kontenp h3{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    
+ }
+ .kontenp h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+ }
+ .kontenp p{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+ }
+ .kontenp a{
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    align-items: center;
+    text-decoration: none;
+    
+    background: var(--bg-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+ }
+ .kontenp a:hover{
+    transform: translateY(-15px);
+    box-shadow: 3px 0;
+    border-radius: 8px;
+ }
+
+.roti{
+    padding: 100px 8% 120px;
+    background-image: url(bgbawaah.png);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+}
+.troti{
+    text-align: center;
+}
+.troti h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+.barisr{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    text-align: center;
+    gap: 2.90rem;
+    margin-top: 30px;
+    
+}
+
+.barisr .barisroti{
+    position: relative;
+    overflow: hidden;
+    border-radius: 80px;
+    cursor: pointer;
+    border-color: #09254d;
+    border-style:ridge;
+    margin: 0px;
+    padding: 0px;
+}
+.barisroti img{
+    width: 80%;
+    border-radius: 40px;
+    display: block;
+    margin: 25px;
+    padding: 0;
+  
+
+}
+.baristext{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+.baristext h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+.harga h4{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.judulbidang{
+    width: 100%;
+    height: auto;
+    padding: 65px 0 20px 0;
+}
+.judulbidang h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.judulbidang .kotaknya{
+    width: 95%;
+    margin: 0 auto;
+}
+.judulbidang .kotaknya .fotobidang{
+    width: 1350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+.judulbidang .kotaknya .fotobidang .fbidang img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+.judulbidang .kotaknya .fotobidang .bidangtag{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.judulbidang .kotaknya .fotobidang .bidangtag p{
+    line-height: 23px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.blog{
+    width: 100%;
+    height:auto;
+    padding: 65px 0 20px 0;
+    color: #000000;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+.blog .blog_box{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.blog .blog_box .blog_card{
+    width: 1350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.blog .blog_box .blog_card .blog_img img{
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blog_box .blog_card .blog_tag{
+    margin-left: 50px;
+}
+
+.blog .blog_box .blog_card .blog_tag h4{
+text-align:left;
+font-size: 30px;
+margin-bottom: 10px;
+
+
+}
+
+.blog .blog_box .blog_card .blog_tag p{
+    line-height: 30px;
+    width: 80%;
+}
+
+.blog .blog_box .blog_card .blog_tag .like{
+    margin-top: 20px;
+    font-size: 19px;
+    color: #fda211;
+}
+
+.blog .blog_box hr{
+    width: 90%;
+    height: 2px;
+    margin: 10px auto;
+    background: #fda211;
+    border: 0;
+}
+
+.blog .blog_box .blog_card_2{
+    width: 1350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+.blog .blog_box .blog_card_2 .blog_tag{
+    margin-right: 50px;
+}
+
+.blog .blog_box .blog_card_2 .blog_tag h4{
+    line-height: 23px;
+
+}
+
+.blog .blog_box .blog_card_2 .blog_tag p{
+    line-height: 23px;
+    overflow-y:hidden;
+}
+
+.blog .blog_box .blog_card_2 .blog_tag h4{
+    text-align:right;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+
+.blog .blog_box .blog_card_2 .blog_img img{
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 150px;
+}
+
+
+
+
+body.bproduk2{
+    background-color: white;
+    background-size: cover;
+    background-position: bottom center;
+
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Kanit", sans-serif;
+}
+
+.keripik{
+    padding: 100px 8% 120px;
+    background-color: #f1fafa;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+}
+
+
+
+.keripik1{
+    padding: 100px 8% 120px;
+    background-color: #f1fafa;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+}
+
+
+
+
+
+
+.barisk{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    text-align: center;
+    gap: 2.90rem;
+    margin-top: 30px;
+    
+}
+
+.barisk .bariskeripik{
+    position: relative;
+    overflow: hidden;
+    border-radius: 80px;
+    cursor: pointer;
+    border-color: #000000;
+    border-style:ridge;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.3);
+    margin: 0px;
+    padding: 0px;
+}
+.bariskeripik img{
+    width: 80%;
+    border-radius: 40px;
+    display: block;
+    margin: 25px;
+    padding: 0;
+  
+
+}
+.barisktext{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+.barisktext h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+
+.barisktext a{
+    margin: 30px;
+    padding: 10px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background: black;
+    border-radius: 50px;
+    text-shadow: 0px 2px 2px rgb(118, 118, 118);
+    text-decoration: none;
+}
+.barisktext a :hover{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.berandap2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+    padding: 50px 8% 20px;
+ }
+
+
+ .berandap2 .img img{
+    max-width: 100%;
+    width: 1000px;
+    size: 200px;
+    object-position: center;
+    margin-right: 600px;
+    margin: 30px;
+
+    padding: 30px 100px;
+
+ }
+
+ .kontenp2{
+    text-align: center;
+    margin: 50px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+
+.kontenp2 a{
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    font-size: 40px;
+    color: #ffffff;
+    align-items: center;
+    text-decoration: none;
+    
+    background: var(--bg-color);
+    border-radius: 50px;
+    border-width: 40px;
+    box-shadow: 0px 5px 40px rgb(19 8 73 / 13%);
+    transition: all .40s ease;
+ }
+ .kontenp2 a:hover{
+    transform: translateY(-15px);
+    box-shadow: 3px 0;
+    border-radius: 8px;
+ }
+
+ .kontenp2 h3{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    
+ }
+ .kontenp2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+ }
+ .kontenp2 p{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+ }
+
+
+/* 
+/* Untuk layar dengan lebar maksimum 1024px */
+@media (max-width: 1024px) {
+
+    .parallax img{
+        padding: 0px 0;
+        overflow: hidden;
+    }
+    .parallax #h2 {
+        font-size: 20px;
+        }
+
+
+    .kkm {
+        flex-direction: column;
+        padding: 80px;
+        height: auto;
+    }
+
+
+    
+body.bkkm{
+    background-image: url(bgkkm.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+        overflow-x: hidden;
+        font-family: "Kanit", sans-serif;
+}
+
+.berandak{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+ }
+ .bgkkm{    
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: fit-content;
+
+
+}
+
+
+
+.kkmt h1{
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    -webkit-text-fill-color: rgb(230, 220, 220);
+    -webkit-text-stroke-width: 1px;
+}
+.kkmt h3{
+    margin: 0px !important;
+    font-size: 12px;
+    line-height: 20px;
+    text-align:justify;
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.3px;
+    text-shadow: 5px  #000000;
+    
+}
+.kkmf img{
+    /* width: 28vw; */
+    size: 50px;
+}
+.kegiatan{
+    height: 200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fkegiatan{
+    position: relative;
+    padding: 0 50px;
+    height: inherit;
+}
+
+
+.fkegiatan img{
+    width: 15vw;
+    position: absolute;
+    top: 220px;
+    /* display: flex; */
+}
+.tkegiatan{
+    width: 50%;
+}
+ol{
+    list-style: none;
+    color: aquamarine;
+}
+ol li{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 1px solid white;
+}
+li p{
+    font-size: 16px;
+    color: green;
+    padding-left: 60px;
+    line-height: 30px;
+    opacity: 0.6;
+}
+li span{
+    position: absolute;
+}
+
+
+
+
+.judulbidang{
+    width: 100%;
+    height: auto;
+    padding: 65px 0 20px 0;
+}
+.judulbidang h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.judulbidang .kotaknya{
+    width: 95%;
+    margin: 0 auto;
+}
+.judulbidang .kotaknya .fotobidang{
+    /* width: 1350px;
+    height: 350px; */
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+.judulbidang .kotaknya .fotobidang .fbidang img {
+    width: 50px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+.judulbidang .kotaknya .fotobidang .bidangtag{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.judulbidang .kotaknya .fotobidang .bidangtag p{
+    line-height: 23px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.blog{
+    width: 100%;
+    height:auto;
+    padding: 65px 0 20px 0;
+    color: #000000;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.blog .blog_box{
+    width: 100%;
+    margin: 0 auto;
+    display:contents;
+}
+
+.blog .blog_box .blog_card{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0px auto;
+}
+
+.blog .blog_box .blog_card .blog_img img{
+    width: 100px;
+    height: 100px;
+    size: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0px;
+}
+
+.blog .blog_box .blog_card .blog_tag{
+    margin-left: 50px;
+}
+
+.blog .blog_box .blog_card .blog_tag h4{
+text-align:left;
+font-size: 15px;
+margin-bottom: 10px;
+
+}
+
+.blog .blog_box .blog_card .blog_tag p{
+    line-height: 13px;
+    font-size: 10px;
+    width: 100%;
+}
+
+.blog .blog_box .blog_card .blog_tag .like{
+    margin-top: 20px;
+    font-size: 19px;
+    color: #fda211;
+}
+
+.blog .blog_box hr{
+    width: 90%;
+    height: 2px;
+    margin: 10px auto;
+    background: #fda211;
+    border: 0;
+}
+
+.blog .blog_box .blog_card_2{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0px auto;
+}
+
+.blog .blog_box .blog_card_2 .blog_tag{
+    margin-right: 50px;
+}
+
+.blog .blog_box .blog_card_2 .blog_tag h4{
+    text-align:left;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.blog .blog_box .blog_card_2 .blog_tag p{
+    line-height: 13px;
+    font-size: 10px;
+    width: 100%;
+}
+
+
+
+
+.blog .blog_box .blog_card_2 .blog_img img{
+    width: 100px;
+    height: 100px;
+    size: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+
+
+
+    
+    header {
+        padding: 0px 10px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .navi a {
+        font-size: 10px;
+        margin: 0px 0;
+
+
+        /* display: contents; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        flex-wrap: wrap;
+  
+        text-decoration: none;
+        /* background: rgb(255, 255, 255); */
+        color: #756600;
+        padding: 6px 15px;
+        border-radius: 20px;
+        margin: 0 5px;
+        font-weight: 600;
+    }
+
+    .navi a:hover,
+    .navi a.active{
+
+        background: #5F6F52;
+        color: azure;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .parallax img {
+        width: 100%;
+        height: auto;
+    }
+
+    .barisr, .barisk {
+        grid-template-columns: 1fr;
+    }
+
+    .blog .blog_box .blog_card_2 .blog_img {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+
+    .parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0;
+    height: 50vh; 
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#text {
+    position: absolute;
+    text-align: center;
+
+    padding-bottom: 240px;
+
+    font-size: 1.5em;
+    color: rgb(45, 73, 61);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+}
+.kata{
+    position:absolute;
+    background: #011714;
+    padding: 10px;
+    height: 1200px;
+    
+}
+
+.kata h2{
+    font-size: 1em;
+    color: white;
+    /* margin-bottom: 10px; */
+    margin-top: 0px;
+    padding-top: 40px;
+}
+
+
+.kata p{
+    font-size: 15px;
+    color: white;
+    /* margin-bottom: 10px; */
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+
+
+/* BUAT UMKM */
+
+
+
+
+
+
+
+
+body.bproduk2{
+    background-color: white;
+    background-size: cover;
+    background-position: bottom center;
+
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Kanit", sans-serif;
+}
+
+.keripik{
+    padding: 80px 50px;
+    background-color: #f1fafa;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 250%;
+}
+
+.keripik1{
+    padding: 80px 50px;
+    background-color: #f1fafa;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    /* height: 180%; */
+}
+
+.troti h3{
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 1px rgb(110, 110, 110);
+}
+.troti P{
+    font-size: 10px;
+    color: black;
+}
+
+.barisk{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    text-align: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+    
+}
+
+.barisk .bariskeripik{
+    /* position: relative; */
+    /* overflow: hidden; */
+    border-radius: 80px;
+    cursor: pointer;
+    border-color: #000000;
+    border-style:ridge;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
+    margin: 0px;
+    padding: 0px;
+}
+.bariskeripik img{
+
+    max-width: 150%;
+    size: 20px;
+    border-radius: 60px;
+    object-position: center;
+    margin: 15px;
+    padding: 10px;
+}
+.barisktext{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+.barisktext h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+.barisktext a{
+    margin: 0px;
+    padding: 10px;
+
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    background: black;
+    border-radius: 50px;
+    text-shadow: 0px 2px 2px rgb(118, 118, 118);
+    text-decoration: none;
+}
+
+
+.barisktext p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: 300;
+    color: black;
+    /* text-shadow: 0px 1px 1px black; */
+}
+
+
+
+.barisktext a :hover{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.berandap2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+    padding: 50px 8% 20px;
+ }
+
+
+ .berandap2 .img img{
+    max-width: 100%;
+    width: 1000px;
+    size: 200px;
+    object-position: center;
+    margin-right: 600px;
+    margin: 30px;
+
+    padding: 30px 100px;
+
+ }
+
+
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 10px; 
+    position:relative; 
+    right: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    bottom: 0px;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.footer .social-icons {
+    margin-bottom: 15px; 
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px; 
+    color: white;
+    text-decoration: none; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.footer .social-icons a:hover {
+    color: #f1c40f;
+    transform: scale(1.2); 
+}
+
+.footer-content {
+    margin-top: 15px; 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 8px; 
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        font-size: 8px; 
+        padding: 15px 5px; 
+    }
+
+    .footer .social-icons a {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px; 
+        padding: 15px 5px;
+    }
+
+    .footer .social-icons a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/* Footer Styles */
+.footer2 {
+    background-color: #011714;
+    color: white;
+    text-align: center;
+    padding: 10px 10px; 
+    position:relative; 
+    right: 0px;
+    left: 0;
+    width: 100%;
+    bottom: 0px;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.footer2 .social-icons2 {
+    margin-bottom: 15px; 
+}
+
+.footer2 .social-icons2 a {
+    margin: 0 10px;
+    font-size: 24px; 
+    color: white;
+    text-decoration: none; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.footer2 .social-icons2 a:hover {
+    color: #f1c40f;
+    transform: scale(1.2); 
+}
+
+/* .footer-content2 {
+    margin-top: 15px; 
+} */
+
+.footer2 p {
+    margin-top: 2px;
+    font-size: 11px;
+    text-align: center; 
+}
+
+@media (max-width: 1024px) {
+    .footer2 {
+        font-size: 8px; 
+        padding: 15px 5px; 
+    }
+
+    .footer2 .social-icons2 a {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .footer2 {
+        font-size: 12px; 
+        padding: 15px 5px;
+    }
+
+    .footer2 .social-icons2 a {
+        font-size: 18px;
+    }
+}
